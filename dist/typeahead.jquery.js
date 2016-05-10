@@ -1130,26 +1130,26 @@
                 if ($selectable = this.menu.getActiveSelectable()) {
                     this.select($selectable) && $e.preventDefault();
                 } else if ($selectable = this.menu.getTopSelectable()) {
-                    this.autocomplete($selectable) && $e.preventDefault();
+                    //this.autocomplete($selectable) && $e.preventDefault();
                 }
             },
             _onEscKeyed: function onEscKeyed() {
                 this.close();
             },
             _onUpKeyed: function onUpKeyed() {
-                this.moveCursor(-1);
+                //this.moveCursor(-1);
             },
             _onDownKeyed: function onDownKeyed() {
-                this.moveCursor(+1);
+                //this.moveCursor(+1);
             },
             _onLeftKeyed: function onLeftKeyed() {
                 if (this.dir === "rtl" && this.input.isCursorAtEnd()) {
-                    this.autocomplete(this.menu.getTopSelectable());
+                    //this.autocomplete(this.menu.getTopSelectable());
                 }
             },
             _onRightKeyed: function onRightKeyed() {
                 if (this.dir === "ltr" && this.input.isCursorAtEnd()) {
-                    this.autocomplete(this.menu.getTopSelectable());
+                    //this.autocomplete(this.menu.getTopSelectable());
                 }
             },
             _onQueryChanged: function onQueryChanged(e, query) {
