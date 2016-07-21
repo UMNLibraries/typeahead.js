@@ -188,7 +188,7 @@
         }
         function buildHtml(c) {
             return {
-                wrapper: '<span id="top-links" class="' + c.wrapper + '"></span>',
+                wrapper: '<span id="suggestions" class="' + c.wrapper + '"></span>',
                 menu: '<div class="' + c.menu + '"></div>'
             };
         }
