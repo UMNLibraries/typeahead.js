@@ -673,7 +673,7 @@
             this.source = o.source.__ttAdapter ? o.source.__ttAdapter() : o.source;
             this.async = _.isUndefined(o.async) ? this.source.length > 2 : !!o.async;
             this._resetLastSuggestion();
-            this.$el = $(o.node).addClass(this.classes.dataset).addClass(this.classes.dataset + "-" + this.name);
+            this.$el = $(o.node).addClass(this.classes.dataset).addClass(this.classes.dataset + "-" + this.name).attr("aria-live", "polite").attr("aria-relevant", "additions removals");
         }
         Dataset.extractData = function extractData(el) {
             var $el = $(el);
